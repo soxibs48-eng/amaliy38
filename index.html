@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UJJO — Qahva Uchun Maxsus Yaratilgan Birinchi Achchiq Sous</title>
+  <meta name="description" content="Eksklyuziv achchiq sous — qahvangizga haqiqiy lava qo'shing! Tabiiy xushbo'y qalampir va vanilli karamel uyg'unligi — UJJO (38-Amaliy Ish).">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="figma_preview.png">
+</head>
+<body>
+
+  <!-- SAYT SARLAVHASI (HEADER) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="badge-pill">Qaynoq Taklif</div>
+
+      <ul class="header-nav">
+        <li><a href="#sauces">Souslar</a></li>
+        <li><a href="#story">Tarixi</a></li>
+        <li><a href="#recipes">Retseptlar</a></li>
+        <li><a href="#footer">Aloqa</a></li>
+      </ul>
+
+      <div class="rotating-medal">🔥</div>
+
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <button id="ujjoCartBtn" class="btn-shop" style="background: #ffffff; color: #121212;">Savat (0)</button>
+        <a href="#sauces" class="btn-shop">Xarid qilish</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="brand-giant-wordmark">UJJO</div>
+          <div class="hero-img-box">
+            <img src="assets/hero-bottle-table.jpg" alt="Ujjo qahva stolidagi sous shishasi">
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <h1 class="hero-tagline">
+            QAHVA UCHUN YARATILGAN BIRINCHI ACHCHIQ SOUS!
+          </h1>
+          <div class="hero-img-box">
+            <img src="assets/hero-bottle-hand.jpg" alt="Ujjo shishasi qo'lda">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HARAKATLANUVCHI MARQUEE LENTA -->
+    <div class="ticker-wrap">
+      <div class="ticker-move">
+        <div class="ticker-item">🌶️ QAHVANGIZGA OLOV QO'SHING!</div>
+        <div class="ticker-item">🔥 THROW SOME LAVA IN YOUR JAVA</div>
+        <div class="ticker-item">⚡ 100% TABIIY INGREDIENTLAR</div>
+        <div class="ticker-item">🌶️ QALAMPIR VA KARAMEL UYG'UNLIGI</div>
+        <div class="ticker-item">🔥 QAHVANGIZGA OLOV QO'SHING!</div>
+        <div class="ticker-item">⚡ THROW SOME LAVA IN YOUR JAVA</div>
+      </div>
+    </div>
+
+    <!-- BANNER: THROW SOME LAVA -->
+    <section class="lava-banner">
+      <div class="scorpion-icon">🦂</div>
+      <h2 class="lava-title">QAHVANGIZGA HAQIQIY LAVA QO'SHING</h2>
+      <div class="scorpion-icon">🦂</div>
+    </section>
+
+    <!-- MAHSULOTLAR VITRINASI (LIME SECTION) -->
+    <section id="sauces" class="products-section">
+      <div class="container">
+        <div class="products-grid">
+          <!-- CARD 1 -->
+          <div class="product-arch-card">
+            <div class="card-top-icon">🔥</div>
+            <span class="card-category">Yengil Qovurilgan Qahvalarga</span>
+            <h3 class="card-title">LIGHT ROAST BLEND</h3>
+            <div class="card-thumb">
+              <img src="assets/product-light.jpg" alt="Light Roast Blend">
+            </div>
+            <div class="card-price">$15.00</div>
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: #444;">
+              Zanjabil, vanil va yumshoq habanero qalampiri uyg'unligi. Nozik ta'mli qahvalar uchun.
+            </p>
+            <button class="btn-shop buy-btn" data-product="Light Roast Blend" data-price="15.00">
+              Savatga Qo'shish
+            </button>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="product-arch-card" style="transform: scale(1.04);">
+            <div class="card-top-icon">🌶️🔥</div>
+            <span class="card-category">Eng Mashhur To'plam</span>
+            <h3 class="card-title">UJJO SAMPLER PACK</h3>
+            <div class="card-thumb">
+              <img src="assets/product-sampler.jpg" alt="Ujjo Sampler Pack">
+            </div>
+            <div class="card-price">$28.00</div>
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: #444;">
+              Ikkala lazzat bir qutida: Light Roast va Dark Roast souslari hamda maxsus sovg'a.
+            </p>
+            <button class="btn-shop buy-btn" data-product="Ujjo Sampler Pack" data-price="28.00" style="background: #121212; color: #ffffff;">
+              To'plamni Olish
+            </button>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="product-arch-card">
+            <div class="card-top-icon">⚡🔥</div>
+            <span class="card-category">To'q Espresso Qahvalariga</span>
+            <h3 class="card-title">DARK ROAST BLEND</h3>
+            <div class="card-thumb">
+              <img src="assets/product-dark.jpg" alt="Dark Roast Blend">
+            </div>
+            <div class="card-price">$15.00</div>
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: #444;">
+              Dolchin, kakao va olovli qizil qalampir. Kuchli va qalin espresso shinavandalariga.
+            </p>
+            <button class="btn-shop buy-btn" data-product="Dark Roast Blend" data-price="15.00">
+              Savatga Qo'shish
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HARAKATDAGI QUYILISH SHOTI (ACTION SHOT) -->
+    <section class="action-shot-section">
+      <img src="assets/pouring-coffee.jpg" alt="Ujjo sousini qaynoq qahvaga quyish jarayoni">
+    </section>
+
+    <!-- SOUS TARIXI (THE STORY BEHIND THE SAUCE) -->
+    <section id="story" class="story-section">
+      <div class="container story-grid">
+        <div class="story-media">
+          <img src="assets/founder.jpg" alt="Lauren D'Souza — Ujjo Ta'sischisi">
+        </div>
+
+        <div class="story-box-frame">
+          <h2 class="story-title">SOUS ORTASIDAGI HAQIQIY TARIX</h2>
+          <p class="story-desc">
+            Hammasi do'stlar davrasida o'ynalgan jasoratli garovdan boshlangan: "Qahvaga achchiq sous solsa nima bo'ladi?". Aksariyat odamlar buni telbalik deb hisoblashdi, ammo ta'sischi Lauren D'Souza oshxonada 18 oy davomida sinovlar o'tkazdi.
+          </p>
+          <p class="story-desc">
+            Natijada qahvaning nordonligini buzmaydigan, balki uning shokolad va meva notalarini o'n barobar yorqinroq ochib beruvchi dunyodagi ilk maxsus kofe sousi — <strong>UJJO</strong> dunyoga keldi.
+          </p>
+          <a href="#sauces" class="btn-shop" style="display: inline-block;">O'zingiz Sinab Ko'ring</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GIGANT LIME FUTER (FOOTER) -->
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="giant-footer-logo">UJJO</div>
+
+      <ul class="footer-nav">
+        <li><a href="#sauces">Souslar</a></li>
+        <li><a href="#story">Biz Haqimizda</a></li>
+        <li><a href="#sauces">Do'kon</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+
+      <div style="max-width: 440px; margin: 0 auto 36px;">
+        <form id="ujjoNewsletterForm" style="display: flex; gap: 8px;">
+          <input type="email" placeholder="Elektron pochtangiz..." required style="flex-grow: 1; padding: 12px 16px; border: 2px solid #121212; border-radius: 4px; font-family: inherit;">
+          <button type="submit" class="btn-shop">Obuna</button>
+        </form>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 UJJO HOT SAUCE. Barcha huquqlar himoyalangan. 38-Amaliy Ish.<br>
+        Figma Dizayni: <a href="https://www.figma.com/file/bfuerSMKMDh802FWCSWioB/Ujjo?node-id=1:130" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700;">Ujjo (node-id: 1:130)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
