@@ -72,3 +72,4 @@ Ushbu loyiha Figma platformasidagi mashhur **UJJO (The First Hot Sauce Made For 
   - `initCart()` — Mahsulotlarni savatga qo'shish va hisoblash.
   - `initNewsletter()` — Obuna formasi integratsiyasi.
 - **Vercel**: `vercel.json` orqali toza URL manzillari bilan global joylashtirishga tayyor.
+

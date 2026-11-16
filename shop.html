@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do'kon — UJJO Hot Sauce</title>
+  <meta name="description" content="UJJO maxsus achchiq souslarining to'liq katalogi: Light Roast, Dark Roast, Sampler to'plamlari va Barista Edition.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="figma_preview.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="badge-pill">Onlayn Do'kon</div>
+
+      <ul class="header-nav">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="shop.html" style="text-decoration: underline; font-weight: 700;">Souslar</a></li>
+        <li><a href="story.html">Tarixi</a></li>
+        <li><a href="contact.html">Aloqa</a></li>
+      </ul>
+
+      <div class="rotating-medal">🔥</div>
+
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <button id="ujjoCartBtn" class="btn-shop" style="background: #ffffff; color: #121212;">Savat (0)</button>
+        <a href="#products-list" class="btn-shop">Xarid qilish</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO TITLE -->
+    <section style="background: var(--color-lime); border-bottom: 2px solid var(--color-dark); padding: 60px 0; text-align: center;">
+      <div class="container">
+        <h1 style="font-family: var(--font-display); font-size: 3.5rem; font-weight: 900; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">
+          Qahva Uchun Souslar Kolleksiyasi
+        </h1>
+        <p style="font-size: 1.2rem; font-weight: 600; max-width: 700px; margin: 0 auto;">
+          Sirka va sarimsoqsiz, qahvaning boy ta'mini saqlagan holda yoqimli olov baxsh etuvchi dunyodagi birinchi souslar!
+        </p>
+      </div>
+    </section>
+
+    <!-- SHOP CATALOG GRID -->
+    <section id="products-list" style="padding: 80px 0; background: #fafafa;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+          
+          <!-- PRODUCT 1 -->
+          <div class="product-arch-card" style="background: white;">
+            <div class="card-top-icon">🌶️</div>
+            <span class="card-category">Yengil Qovurilgan Qahvalar Uchun</span>
+            <h3 class="card-title">LIGHT ROAST BLEND</h3>
+            <div class="card-thumb">
+              <img src="assets/product-light.jpg" alt="Light Roast Blend">
+            </div>
+            <div class="card-price">$15.00</div>
+            <p style="font-size: 0.95rem; margin-bottom: 20px; color: #444; line-height: 1.6;">
+              Vanil, apelsin po'stlog'i va xushbo'y xabanero qalampiri. Arabika qahvasining mevali nordonligini mukammal to'ldiradi.
+            </p>
+            <button class="btn-shop buy-btn" data-product="Light Roast Blend" data-price="15.00" style="width: 100%;">
+              Savatga Qo'shish
+            </button>
+          </div>
+
+          <!-- PRODUCT 2 -->
+          <div class="product-arch-card" style="background: white;">
+            <div class="card-top-icon">⚡🔥</div>
+            <span class="card-category">To'q Espresso Qahvalariga</span>
+            <h3 class="card-title">DARK ROAST BLEND</h3>
+            <div class="card-thumb">
+              <img src="assets/product-dark.jpg" alt="Dark Roast Blend">
+            </div>
+            <div class="card-price">$15.00</div>
+            <p style="font-size: 0.95rem; margin-bottom: 20px; color: #444; line-height: 1.6;">
+              Dolchin, tabiiy kakao va olovli qizil qalampir. Kuchli espresso, latte va kapuchino shinavandalari uchun yaratilgan.
+            </p>
+            <button class="btn-shop buy-btn" data-product="Dark Roast Blend" data-price="15.00" style="width: 100%;">
+              Savatga Qo'shish
+            </button>
+          </div>
+
+          <!-- PRODUCT 3 -->
+          <div class="product-arch-card" style="background: white;">
+            <div class="card-top-icon">🎁</div>
+            <span class="card-category">Sovg'abop To'plam</span>
+            <h3 class="card-title">THE SAMPLER DUO</h3>
+            <div class="card-thumb">
+              <img src="assets/hero-bottle-table.jpg" alt="The Sampler Duo">
+            </div>
+            <div class="card-price">$28.00</div>
+            <p style="font-size: 0.95rem; margin-bottom: 20px; color: #444; line-height: 1.6;">
+              Har ikkala shisha (Light va Dark) maxsus qora sovg'a qutisida. Qahva ixlosmandlari uchun unutilmas hadya!
+            </p>
+            <button class="btn-shop buy-btn" data-product="The Sampler Duo" data-price="28.00" style="width: 100%;">
+              Savatga Qo'shish
+            </button>
+          </div>
+
+          <!-- PRODUCT 4 -->
+          <div class="product-arch-card" style="background: white;">
+            <div class="card-top-icon">☕</div>
+            <span class="card-category">Barista va Kafelar Uchun</span>
+            <h3 class="card-title">BARISTA JUG (1 GALLON)</h3>
+            <div class="card-thumb">
+              <img src="assets/hero-bottle-hand.jpg" alt="Barista Edition">
+            </div>
+            <div class="card-price">$75.00</div>
+            <p style="font-size: 0.95rem; margin-bottom: 20px; color: #444; line-height: 1.6;">
+              Qahvaxonalar uchun katta hajm. Maxsus dozatorli qopqoq bilan jihozlangan tejamkor professional variant.
+            </p>
+            <button class="btn-shop buy-btn" data-product="Barista Jug" data-price="75.00" style="width: 100%;">
+              Savatga Qo'shish
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INGREDIENTS BANNER -->
+    <section style="background: var(--color-dark); color: white; padding: 60px 0; text-align: center;">
+      <div class="container">
+        <h2 style="font-family: var(--font-display); font-size: 2.4rem; margin-bottom: 16px; color: var(--color-lime);">
+          NIMA UCHUN UJJO ODDIY ACHCHIQ SOUSLARDAN FARQ QILADI?
+        </h2>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #ccc; line-height: 1.7;">
+          Standart achchiq souslar sirka va sarimsoq asosida tayyorlanadi — bu esa qahvani achitib, uning ta'mini butunlay buzadi. UJJO tarkibida esa faqat xushbo'y qalampir ekstrakti, organik karamel, vanil va zanjabil mavjud.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="giant-footer-logo">UJJO</div>
+
+      <ul class="footer-nav">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="shop.html">Souslar</a></li>
+        <li><a href="story.html">Biz Haqimizda</a></li>
+        <li><a href="contact.html">Aloqa</a></li>
+      </ul>
+
+      <div class="footer-copy">
+        © 2026 UJJO HOT SAUCE. Barcha huquqlar himoyalangan. 38-Amaliy Ish.<br>
+        Figma Dizayni: <a href="https://www.figma.com/file/bfuerSMKMDh802FWCSWioB/Ujjo?node-id=1:130" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700;">Ujjo (node-id: 1:130)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

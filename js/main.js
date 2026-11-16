@@ -48,3 +48,4 @@ function initNewsletter() {
     form.reset();
   });
 }
+
